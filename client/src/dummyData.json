@@ -1,10 +1,8 @@
 [
   {
     "name": "brocade",
-    "description":
-      "A richly decorative fabric, often made from silk, featuring intricate patterns woven with a raised design.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A richly decorative fabric, often made from silk, featuring intricate patterns woven with a raised design.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Silk", "Polyester"],
@@ -29,10 +27,8 @@
   },
   {
     "name": "canvas",
-    "description":
-      "A durable, heavy-duty fabric typically made from cotton or linen, used for making tents, sails, and casual shoes.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A durable, heavy-duty fabric typically made from cotton or linen, used for making tents, sails, and casual shoes.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton", "Linen"],
@@ -48,7 +44,7 @@
     },
     "garments": {
       "cleaning": "machine wash",
-      "uses": ["tote bags", "shoes", "outdoor gear"]
+      "uses": ["tote bags", "shoes", "outerwear"]
     },
     "quantities": {
       "cost": 9.99,
@@ -57,10 +53,8 @@
   },
   {
     "name": "chenille",
-    "description":
-      "A soft, textured fabric known for its velvety feel and cozy appearance, often used in upholstery and blankets.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A soft, textured fabric known for its velvety feel and cozy appearance, often used in upholstery and blankets.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton", "Acrylic", "Polyester"],
@@ -85,13 +79,11 @@
   },
   {
     "name": "chiffon",
-    "description":
-      "A lightweight, sheer fabric with a soft, flowing drape, commonly used for dresses and scarves.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A lightweight, sheer fabric with a soft, flowing drape, commonly used for dresses and scarves.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester"],
+      "fiber": ["Silk", "Polyester", "Cupro"],
       "similarFabrics": ["Georgette", "Organza", "Tulle"]
     },
     "characteristics": {
@@ -104,7 +96,7 @@
     },
     "garments": {
       "cleaning": "hand wash or dry clean",
-      "uses": ["evening wear", "blouses", "scarves"]
+      "uses": ["evening wear", "blouses", "scarves", "skirts"]
     },
     "quantities": {
       "cost": 18.99,
@@ -113,10 +105,8 @@
   },
   {
     "name": "coating",
-    "description":
-      "A heavyweight fabric designed for making outerwear, such as coats and jackets, providing warmth and durability.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A heavyweight fabric designed for making outerwear, such as coats and jackets, providing warmth and durability.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
       "fiber": ["Wool", "Polyester", "Nylon"],
@@ -141,13 +131,11 @@
   },
   {
     "name": "crepe",
-    "description":
-      "A fabric with a crinkled or pebbled texture, available in various weights and used for elegant dresses and blouses.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A fabric with a crinkled or pebbled texture, available in various weights and used for elegant dresses and blouses.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester", "Wool"],
+      "fiber": ["Silk", "Polyester", "Wool", "Cupro"],
       "similarFabrics": ["Georgette", "Chiffon", "Crêpe de Chine"]
     },
     "characteristics": {
@@ -160,7 +148,7 @@
     },
     "garments": {
       "cleaning": "hand wash or dry clean",
-      "uses": ["dresses", "blouses", "suits"]
+      "uses": ["dresses", "blouses", "suits", "skirts"]
     },
     "quantities": {
       "cost": 22.99,
@@ -169,10 +157,8 @@
   },
   {
     "name": "double guaze",
-    "description":
-      "A lightweight, breathable fabric made from two layers of gauze, often used for baby clothes and summer garments.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A lightweight, breathable fabric made from two layers of gauze, often used for baby clothes and summer garments.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton"],
@@ -188,7 +174,7 @@
     },
     "garments": {
       "cleaning": "machine wash",
-      "uses": ["baby clothes", "summer dresses", "swaddles"]
+      "uses": ["baby clothes", "dresses", "skirts"]
     },
     "quantities": {
       "cost": 11.99,
@@ -197,13 +183,11 @@
   },
   {
     "name": "drapey",
-    "description":
-      "Fabrics that have a fluid, graceful fall, ideal for making garments with movement, like skirts and dresses.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Fabrics that have a fluid, graceful fall, ideal for making garments with movement, like skirts and dresses.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Silk", "Rayon", "Polyester"],
+      "fiber": ["Silk", "Rayon", "Polyester", "Tencel", "Cupro"],
       "similarFabrics": ["Chiffon", "Georgette", "Crepe"]
     },
     "characteristics": {
@@ -225,10 +209,8 @@
   },
   {
     "name": "fleece",
-    "description":
-      "A synthetic fabric known for its warmth, softness, and lightweight, perfect for outdoor clothing and blankets.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A synthetic fabric known for its warmth, softness, and lightweight, perfect for outdoor clothing and blankets.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
       "fiber": ["Polyester", "Cotton", "Wool"],
@@ -253,10 +235,8 @@
   },
   {
     "name": "flannel",
-    "description":
-      "A soft, warm fabric with a brushed surface, commonly used for pajamas, shirts, and bedding.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A soft, warm fabric with a brushed surface, commonly used for pajamas, shirts, and bedding.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton", "Wool"],
@@ -281,10 +261,8 @@
   },
   {
     "name": "jacquard",
-    "description":
-      "A fabric featuring intricate patterns woven into the material, rather than printed, used for upholstery and formal wear.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A fabric featuring intricate patterns woven into the material, rather than printed, used for upholstery and formal wear.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton", "Polyester", "Silk"],
@@ -300,7 +278,7 @@
     },
     "garments": {
       "cleaning": "machine wash or dry clean",
-      "uses": ["home decor", "upholstery", "formal wear"]
+      "uses": ["home decor", "upholstery", "evening wear", "skirts"]
     },
     "quantities": {
       "cost": 17.99,
@@ -309,13 +287,11 @@
   },
   {
     "name": "knits",
-    "description":
-      "Stretchy fabrics made from interlocking loops of yarn, used for making comfortable and flexible garments like t-shirts and sweaters.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Stretchy fabrics made from interlocking loops of yarn, used for making comfortable and flexible garments like t-shirts and sweaters.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
-      "fiber": ["Cotton", "Wool", "Polyester"],
+      "fiber": ["Cotton", "Wool", "Polyester", "Tencel"],
       "similarFabrics": ["Jersey", "Rib Knit", "Interlock Knit"]
     },
     "characteristics": {
@@ -337,10 +313,8 @@
   },
   {
     "name": "lace",
-    "description":
-      "A delicate, decorative fabric made from threads in an open, web-like pattern, often used for bridal wear and lingerie.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A delicate, decorative fabric made from threads in an open, web-like pattern, often used for bridal wear and lingerie.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
       "fiber": ["Cotton", "Polyester", "Nylon"],
@@ -365,10 +339,8 @@
   },
   {
     "name": "leather",
-    "description":
-      "A durable and flexible material made from animal hide, used for jackets, bags, and shoes.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A durable and flexible material made from animal hide, used for jackets, bags, and shoes.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Natural",
       "fiber": ["Animal Hide"],
@@ -393,13 +365,11 @@
   },
   {
     "name": "lining",
-    "description":
-      "Smooth, lightweight fabrics used inside garments to improve comfort and appearance, such as in coats and skirts.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Smooth, lightweight fabrics used inside garments to improve comfort and appearance, such as in coats and skirts.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Acetate", "Polyester", "Silk"],
+      "fiber": ["Acetate", "Polyester", "Silk", "Tencel", "Cupro"],
       "similarFabrics": ["Batiste", "Voile", "Tricot"]
     },
     "characteristics": {
@@ -412,7 +382,7 @@
     },
     "garments": {
       "cleaning": "machine wash or dry clean",
-      "uses": ["lining for garments", "bags", "jackets"]
+      "uses": ["lining", "bags", "jackets"]
     },
     "quantities": {
       "cost": 5.99,
@@ -421,13 +391,11 @@
   },
   {
     "name": "satin",
-    "description":
-      "A glossy, smooth fabric with a luxurious sheen, often used for evening wear and lingerie.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A glossy, smooth fabric with a luxurious sheen, often used for evening wear and lingerie.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester"],
+      "fiber": ["Silk", "Polyester", "Cupro"],
       "similarFabrics": ["Charmeuse", "Silk", "Crepe"]
     },
     "characteristics": {
@@ -449,10 +417,8 @@
   },
   {
     "name": "swimwear",
-    "description":
-      "Fabrics designed specifically for making swimsuits, typically stretchy, quick-drying, and resistant to chlorine.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Fabrics designed specifically for making swimsuits, typically stretchy, quick-drying, and resistant to chlorine.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
       "fiber": ["Nylon", "Spandex", "Polyester"],
@@ -477,10 +443,8 @@
   },
   {
     "name": "twill",
-    "description":
-      "A versatile fabric with a distinctive diagonal weave, used for making trousers, jackets, and workwear.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A versatile fabric with a distinctive diagonal weave, used for making trousers, jackets, and workwear.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Cotton", "Polyester", "Wool"],
@@ -496,7 +460,7 @@
     },
     "garments": {
       "cleaning": "machine wash",
-      "uses": ["pants", "jackets", "uniforms"]
+      "uses": ["pants", "jackets", "uniforms", "skirts"]
     },
     "quantities": {
       "cost": 9.99,
@@ -505,10 +469,8 @@
   },
   {
     "name": "velvet",
-    "description":
-      "A soft, plush fabric with a dense pile, known for its luxurious feel and rich appearance, used in clothing and home decor.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "A soft, plush fabric with a dense pile, known for its luxurious feel and rich appearance, used in clothing and home decor.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
       "fiber": ["Silk", "Cotton", "Polyester"],
@@ -533,10 +495,8 @@
   },
   {
     "name": "waterResistant",
-    "description":
-      "Fabrics treated or woven to repel water, used for making outdoor gear and rainwear.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Fabrics treated or woven to repel water, used for making outdoor gear and rainwear.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
       "fiber": ["Polyester", "Nylon"],
@@ -561,13 +521,11 @@
   },
   {
     "name": "wovens",
-    "description":
-      "Fabrics made by interlacing threads at right angles, providing stability and structure, used for shirts, pants, and dresses.",
-    "image":
-      "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
+    "description": "Fabrics made by interlacing threads at right angles, providing stability and structure, used for shirts, pants, and dresses.",
+    "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Polyester", "Silk", "Wool"],
+      "fiber": ["Cotton", "Polyester", "Silk", "Wool", "Tencel"],
       "similarFabrics": ["Poplin", "Chiffon", "Taffeta"]
     },
     "characteristics": {

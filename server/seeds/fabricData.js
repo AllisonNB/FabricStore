@@ -48,7 +48,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "machine wash",
-      uses: ["tote bags", "shoes", "outdoor gear"],
+      uses: ["tote bags", "shoes", "outerwear"],
     },
     quantities: {
       cost: 9.99,
@@ -92,7 +92,7 @@ const fabricData = [
     composition: {
       construction: "Woven",
       fiber: ["Silk", "Polyester"],
-      similarFabrics: ["Georgette", "Organza", "Tulle"],
+      similarFabrics: ["Georgette", "Organza", "Tulle", "Cupro"],
     },
     characteristics: {
       weight: "light",
@@ -104,7 +104,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "hand wash or dry clean",
-      uses: ["evening wear", "blouses", "scarves"],
+      uses: ["evening wear", "blouses", "scarves", "skirts"],
     },
     quantities: {
       cost: 18.99,
@@ -147,7 +147,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Woven",
-      fiber: ["Silk", "Polyester", "Wool"],
+      fiber: ["Silk", "Polyester", "Wool", "Cupro"],
       similarFabrics: ["Georgette", "Chiffon", "Crêpe de Chine"],
     },
     characteristics: {
@@ -160,7 +160,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "hand wash or dry clean",
-      uses: ["dresses", "blouses", "suits"],
+      uses: ["dresses", "blouses", "suits", "skirts"],
     },
     quantities: {
       cost: 22.99,
@@ -188,7 +188,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "machine wash",
-      uses: ["baby clothes", "summer dresses", "swaddles"],
+      uses: ["baby clothes", "dresses", "skirts"],
     },
     quantities: {
       cost: 11.99,
@@ -203,7 +203,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Woven or Knit",
-      fiber: ["Silk", "Rayon", "Polyester"],
+      fiber: ["Silk", "Rayon", "Polyester", "Tencel", "Cupro"],
       similarFabrics: ["Chiffon", "Georgette", "Crepe"],
     },
     characteristics: {
@@ -300,7 +300,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "machine wash or dry clean",
-      uses: ["home decor", "upholstery", "formal wear"],
+      uses: ["home decor", "upholstery", "evening wear", "skirts"],
     },
     quantities: {
       cost: 17.99,
@@ -315,7 +315,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Knit",
-      fiber: ["Cotton", "Wool", "Polyester"],
+      fiber: ["Cotton", "Wool", "Polyester", "Tencel"],
       similarFabrics: ["Jersey", "Rib Knit", "Interlock Knit"],
     },
     characteristics: {
@@ -399,7 +399,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Woven or Knit",
-      fiber: ["Acetate", "Polyester", "Silk"],
+      fiber: ["Acetate", "Polyester", "Silk", "Tencel", "Cupro"],
       similarFabrics: ["Batiste", "Voile", "Tricot"],
     },
     characteristics: {
@@ -412,7 +412,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "machine wash or dry clean",
-      uses: ["lining for garments", "bags", "jackets"],
+      uses: ["lining", "bags", "jackets"],
     },
     quantities: {
       cost: 5.99,
@@ -427,7 +427,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Woven",
-      fiber: ["Silk", "Polyester"],
+      fiber: ["Silk", "Polyester", "Cupro"],
       similarFabrics: ["Charmeuse", "Silk", "Crepe"],
     },
     characteristics: {
@@ -496,7 +496,7 @@ const fabricData = [
     },
     garments: {
       cleaning: "machine wash",
-      uses: ["pants", "jackets", "uniforms"],
+      uses: ["pants", "jackets", "uniforms", "skirts"],
     },
     quantities: {
       cost: 9.99,
@@ -567,7 +567,7 @@ const fabricData = [
       "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     composition: {
       construction: "Woven",
-      fiber: ["Cotton", "Polyester", "Silk", "Wool"],
+      fiber: ["Cotton", "Polyester", "Silk", "Wool", "Tencel"],
       similarFabrics: ["Poplin", "Chiffon", "Taffeta"],
     },
     characteristics: {

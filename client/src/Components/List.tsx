@@ -12,7 +12,7 @@ const List = ({fabrics}: fabricProps) => {
     console.log('list fab:', fabrics)
 
     return ( <div className={classes.border}>
-       <ul>
+       <ul className={classes.gridList}>
         {fabrics.map((fabric, index) => <Item key={index} {...fabric}/>)}
        </ul>
     </div> );

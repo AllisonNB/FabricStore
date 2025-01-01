@@ -9,11 +9,11 @@ const Item = (fabric: fabricProps) => {
     
     return ( <>
         <div className={classes.border}>
-            <img src='' alt="fabric sample" />
-            <h1>Fabric Name - Color</h1>
-            <p>$$ / yard</p>
-            <div>
-                <button>Quick Shop</button>
+            <img src={fabric.image} alt="fabric sample" />
+            <h1>{fabric.name}</h1>
+            <p>${fabric.quantities.cost} / yard</p>
+            <div className={classes.buttonContainer}>
+                <button className={classes.button}>Quick Add</button>
             </div>
         </div>
     </> );

@@ -1,0 +1,6 @@
+.border {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 20px 15px;
+  gap: 5px;
+}

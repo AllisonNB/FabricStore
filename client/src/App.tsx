@@ -1,5 +1,8 @@
 import Header from './Components/Header';
 import List from './Components/List';
+import Sidebar from './Components/Sidebar';
+
+import classes from './App.module.css';
 
 //dummy data
 import dummyData from './dummyData.json'; 
@@ -13,7 +16,10 @@ function App() {
   return (
     <>
       <Header/>
-      <List fabrics={fabrics}/>
+      <main className={classes.border}>
+        <Sidebar/>
+        <List fabrics={fabrics}/>
+      </main>
     </>
   )
 }

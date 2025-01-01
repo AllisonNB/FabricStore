@@ -1,4 +1,4 @@
-export type Fabric = [{
+export type Fabric = {
     name: string,
     description: string,
     image: string,
@@ -23,7 +23,7 @@ export type Fabric = [{
         cost: number,     
         amount: number,  
     },
-}];
+};
   
 export type FabricData = Fabric[];
 

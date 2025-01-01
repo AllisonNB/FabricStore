@@ -1,8 +1,23 @@
 .border {
-    border: 1px solid red;
+    padding: 10px;
 }
 
 img {
-    width: 25%;
+    border-radius: 5px 5px 0 0;
 }
 
+h1 {
+    text-transform: capitalize;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #f4a261;
+    border: 1px solid #f4a261;
+    border-radius: 2px;
+    font-weight: 500;
+}
