@@ -151,7 +151,7 @@ const fabricData = [
       similarFabrics: ["Georgette", "Chiffon", "Crêpe de Chine"],
     },
     characteristics: {
-      weight: "light to medium",
+      weight: "light",
       stretch: "none",
       transparency: "varies",
       breathability: "high",
@@ -179,7 +179,7 @@ const fabricData = [
       similarFabrics: ["Muslin", "Voile", "Lawn"],
     },
     characteristics: {
-      weight: "light to medium",
+      weight: "light",
       stretch: "none",
       transparency: "semi-opaque to fully-opaque",
       breathability: "high",
@@ -207,8 +207,8 @@ const fabricData = [
       similarFabrics: ["Chiffon", "Georgette", "Crepe"],
     },
     characteristics: {
-      weight: "light to medium",
-      stretch: "none to medium",
+      weight: "medium",
+      stretch: "medium",
       transparency: "varies",
       breathability: "high",
       wrinkle: "medium",
@@ -235,8 +235,8 @@ const fabricData = [
       similarFabrics: ["Microfiber", "Terrycloth", "Sherpa"],
     },
     characteristics: {
-      weight: "medium to heavy",
-      stretch: "light to medium",
+      weight: "heavy",
+      stretch: "light",
       transparency: "fully-opaque",
       breathability: "medium to low",
       wrinkle: "low",
@@ -291,7 +291,7 @@ const fabricData = [
       similarFabrics: ["Brocade", "Damask", "Matelassé"],
     },
     characteristics: {
-      weight: "medium to heavy",
+      weight: "heavy",
       stretch: "none",
       transparency: "fully-opaque",
       breathability: "medium",
@@ -320,7 +320,7 @@ const fabricData = [
     },
     characteristics: {
       weight: "varies",
-      stretch: "medium to high",
+      stretch: "high",
       transparency: "varies",
       breathability: "high",
       wrinkle: "low",
@@ -375,7 +375,7 @@ const fabricData = [
       similarFabrics: ["Faux Leather", "Suede", "Nubuck"],
     },
     characteristics: {
-      weight: "medium to heavy",
+      weight: "heavy",
       stretch: "none",
       transparency: "fully-opaque",
       breathability: "low",
@@ -404,7 +404,7 @@ const fabricData = [
     },
     characteristics: {
       weight: "light",
-      stretch: "none to light",
+      stretch: "light",
       transparency: "varies",
       breathability: "low to medium",
       wrinkle: "low",
@@ -431,7 +431,7 @@ const fabricData = [
       similarFabrics: ["Charmeuse", "Silk", "Crepe"],
     },
     characteristics: {
-      weight: "light to medium",
+      weight: "medium",
       stretch: "none",
       transparency: "varies",
       breathability: "low",
@@ -459,7 +459,7 @@ const fabricData = [
       similarFabrics: ["Lycra", "Tricot", "Power Mesh"],
     },
     characteristics: {
-      weight: "light to medium",
+      weight: "medium",
       stretch: "high",
       transparency: "fully-opaque",
       breathability: "low",
@@ -487,7 +487,7 @@ const fabricData = [
       similarFabrics: ["Denim", "Chino", "Gabardine"],
     },
     characteristics: {
-      weight: "medium to heavy",
+      weight: "medium",
       stretch: "none",
       transparency: "fully-opaque",
       breathability: "medium",
@@ -515,8 +515,8 @@ const fabricData = [
       similarFabrics: ["Velveteen", "Corduroy", "Chenille"],
     },
     characteristics: {
-      weight: "medium to heavy",
-      stretch: "none to light",
+      weight: "heavy",
+      stretch: "light",
       transparency: "fully-opaque",
       breathability: "low",
       wrinkle: "medium",
@@ -543,8 +543,8 @@ const fabricData = [
       similarFabrics: ["Gore-Tex", "Softshell", "Ripstop Nylon"],
     },
     characteristics: {
-      weight: "light to medium",
-      stretch: "none to light",
+      weight: "medium",
+      stretch: "light",
       transparency: "fully-opaque",
       breathability: "low to medium",
       wrinkle: "low",
