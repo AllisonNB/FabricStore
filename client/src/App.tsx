@@ -1,7 +1,11 @@
 import Header from "./Components/Header";
 import List from "./Components/List";
 import Sidebar from "./Components/Sidebar";
+import Cart from "./Components/Cart";
 import classes from "./App.module.css";
+
+//store
+import { Provider } from "react-redux";
 
 //dummy data
 import dummyData from "./dummyData.json";
