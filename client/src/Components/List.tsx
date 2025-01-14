@@ -1,21 +1,29 @@
-import classes from './List.module.css';
-import Item from './Item';
-import {Fabric} from '../types/fabrics';
+import classes from "./List.module.css";
+import Item from "./Item";
+import { Fabric } from "../types/fabrics";
 
 type fabricProps = {
-    fabrics: Fabric[];
+  filteredFabrics: Fabric[];
 };
 
+const List = ({ filteredFabrics }: fabricProps) => {
+  // console.log("display:", filteredFabrics);
 
-const List = ({fabrics}: fabricProps) => {
+  return (
+    <div className={classes.border}>
+      {filteredFabrics.length === 0 ? (
+        <h2 className={classes.displayMessage}>
+          No fabrics matched your selection. Try using fewer filters.
+        </h2>
+      ) : (
+        <ul className={classes.gridList}>
+          {filteredFabrics.map((fabric, index) => (
+            <Item key={index} {...fabric} />
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
 
-    console.log('list fab:', fabrics)
-
-    return ( <div className={classes.border}>
-       <ul className={classes.gridList}>
-        {fabrics.map((fabric, index) => <Item key={index} {...fabric}/>)}
-       </ul>
-    </div> );
-}
- 
 export default List;

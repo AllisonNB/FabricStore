@@ -5,7 +5,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester"],
+      "fiber": ["silk", "polyester"],
       "similarFabrics": ["Damask", "Jacquard", "Tapestry"]
     },
     "characteristics": {
@@ -18,11 +18,12 @@
     },
     "garments": {
       "cleaning": "dry clean",
-      "uses": ["evening wear", "upholstery", "decor"]
+      "uses": ["evening-wear", "upholstery", "decor"]
     },
     "quantities": {
       "cost": 29.99,
-      "amount": 7.75
+      "amount": 7.75,
+      "sale": false
     }
   },
   {
@@ -31,7 +32,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Linen"],
+      "fiber": ["cotton", "linen"],
       "similarFabrics": ["Denim", "Duck Cloth", "Twill"]
     },
     "characteristics": {
@@ -48,7 +49,8 @@
     },
     "quantities": {
       "cost": 9.99,
-      "amount": 3.5
+      "amount": 3.5,
+      "sale": true
     }
   },
   {
@@ -57,7 +59,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Acrylic", "Polyester"],
+      "fiber": ["cotton", "acrylic", "polyester"],
       "similarFabrics": ["Velvet", "Terry Cloth", "Fleece"]
     },
     "characteristics": {
@@ -74,7 +76,8 @@
     },
     "quantities": {
       "cost": 14.99,
-      "amount": 4.25
+      "amount": 4.25,
+      "sale": true
     }
   },
   {
@@ -83,7 +86,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester", "Cupro"],
+      "fiber": ["silk", "polyester", "cupro"],
       "similarFabrics": ["Georgette", "Organza", "Tulle"]
     },
     "characteristics": {
@@ -96,11 +99,12 @@
     },
     "garments": {
       "cleaning": "hand wash or dry clean",
-      "uses": ["evening wear", "blouses", "scarves", "skirts"]
+      "uses": ["evening-wear", "blouses", "scarves", "skirts"]
     },
     "quantities": {
       "cost": 18.99,
-      "amount": 2.75
+      "amount": 2.75,
+      "sale": false
     }
   },
   {
@@ -109,7 +113,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Wool", "Polyester", "Nylon"],
+      "fiber": ["wool", "polyester", "nylon"],
       "similarFabrics": ["Melton", "Tweed", "Gabardine"]
     },
     "characteristics": {
@@ -126,7 +130,8 @@
     },
     "quantities": {
       "cost": 19.99,
-      "amount": 6.5
+      "amount": 6.5,
+      "sale": false
     }
   },
   {
@@ -135,7 +140,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester", "Wool", "Cupro"],
+      "fiber": ["silk", "polyester", "wool", "cupro"],
       "similarFabrics": ["Georgette", "Chiffon", "Crêpe de Chine"]
     },
     "characteristics": {
@@ -152,16 +157,17 @@
     },
     "quantities": {
       "cost": 22.99,
-      "amount": 4.5
+      "amount": 4.5,
+      "sale": true
     }
   },
   {
-    "name": "double guaze",
+    "name": "double gauze",
     "description": "A lightweight, breathable fabric made from two layers of gauze, often used for baby clothes and summer garments.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton"],
+      "fiber": ["cotton"],
       "similarFabrics": ["Muslin", "Voile", "Lawn"]
     },
     "characteristics": {
@@ -178,7 +184,8 @@
     },
     "quantities": {
       "cost": 11.99,
-      "amount": 5.25
+      "amount": 5.25,
+      "sale": false
     }
   },
   {
@@ -187,7 +194,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Silk", "Rayon", "Polyester", "Tencel", "Cupro"],
+      "fiber": ["silk", "rayon", "polyester", "tencel", "cupro"],
       "similarFabrics": ["Chiffon", "Georgette", "Crepe"]
     },
     "characteristics": {
@@ -204,7 +211,8 @@
     },
     "quantities": {
       "cost": 16.99,
-      "amount": 4.5
+      "amount": 4.5,
+      "sale": true
     }
   },
   {
@@ -213,7 +221,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
-      "fiber": ["Polyester", "Cotton", "Wool"],
+      "fiber": ["polyester", "cotton", "wool"],
       "similarFabrics": ["Microfiber", "Terrycloth", "Sherpa"]
     },
     "characteristics": {
@@ -230,7 +238,8 @@
     },
     "quantities": {
       "cost": 10.99,
-      "amount": 5.75
+      "amount": 5.75,
+      "sale": false
     }
   },
   {
@@ -239,7 +248,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Wool"],
+      "fiber": ["cotton", "wool"],
       "similarFabrics": ["Tartan", "Chamois", "Brushed Cotton"]
     },
     "characteristics": {
@@ -256,7 +265,8 @@
     },
     "quantities": {
       "cost": 7.99,
-      "amount": 4.5
+      "amount": 4.5,
+      "sale": true
     }
   },
   {
@@ -265,7 +275,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Polyester", "Silk"],
+      "fiber": ["cotton", "polyester", "silk"],
       "similarFabrics": ["Brocade", "Damask", "Matelassé"]
     },
     "characteristics": {
@@ -278,11 +288,12 @@
     },
     "garments": {
       "cleaning": "machine wash or dry clean",
-      "uses": ["home decor", "upholstery", "evening wear", "skirts"]
+      "uses": ["home decor", "upholstery", "evening-wear", "skirts"]
     },
     "quantities": {
       "cost": 17.99,
-      "amount": 3.5
+      "amount": 3.5,
+      "sale": false
     }
   },
   {
@@ -291,7 +302,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
-      "fiber": ["Cotton", "Wool", "Polyester", "Tencel"],
+      "fiber": ["cotton", "wool", "polyester", "tencel"],
       "similarFabrics": ["Jersey", "Rib Knit", "Interlock Knit"]
     },
     "characteristics": {
@@ -308,7 +319,8 @@
     },
     "quantities": {
       "cost": 8.99,
-      "amount": 6.25
+      "amount": 6.25,
+      "sale": false
     }
   },
   {
@@ -317,7 +329,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Cotton", "Polyester", "Nylon"],
+      "fiber": ["cotton", "polyester", "nylon"],
       "similarFabrics": ["Eyelet", "Tulle", "Chantilly Lace"]
     },
     "characteristics": {
@@ -334,7 +346,8 @@
     },
     "quantities": {
       "cost": 12.99,
-      "amount": 3.0
+      "amount": 3.0,
+      "sale": false
     }
   },
   {
@@ -343,7 +356,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Natural",
-      "fiber": ["Animal Hide"],
+      "fiber": ["animal hide"],
       "similarFabrics": ["Faux Leather", "Suede", "Nubuck"]
     },
     "characteristics": {
@@ -360,7 +373,8 @@
     },
     "quantities": {
       "cost": 35.99,
-      "amount": 4.25
+      "amount": 4.25,
+      "sale": false
     }
   },
   {
@@ -369,7 +383,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Acetate", "Polyester", "Silk", "Tencel", "Cupro"],
+      "fiber": ["acetate", "polyester", "silk", "tencel", "cupro"],
       "similarFabrics": ["Batiste", "Voile", "Tricot"]
     },
     "characteristics": {
@@ -386,7 +400,8 @@
     },
     "quantities": {
       "cost": 5.99,
-      "amount": 3.75
+      "amount": 3.75,
+      "sale": false
     }
   },
   {
@@ -395,7 +410,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Polyester", "Cupro"],
+      "fiber": ["silk", "polyester", "cupro"],
       "similarFabrics": ["Charmeuse", "Silk", "Crepe"]
     },
     "characteristics": {
@@ -408,11 +423,12 @@
     },
     "garments": {
       "cleaning": "hand wash or dry clean",
-      "uses": ["evening wear", "lingerie", "linings"]
+      "uses": ["evening-wear", "lingerie", "linings"]
     },
     "quantities": {
       "cost": 18.99,
-      "amount": 2.5
+      "amount": 2.5,
+      "sale": true
     }
   },
   {
@@ -421,7 +437,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Knit",
-      "fiber": ["Nylon", "Spandex", "Polyester"],
+      "fiber": ["nylon", "spandex", "polyester"],
       "similarFabrics": ["Lycra", "Tricot", "Power Mesh"]
     },
     "characteristics": {
@@ -438,7 +454,8 @@
     },
     "quantities": {
       "cost": 15.99,
-      "amount": 4.0
+      "amount": 4.0,
+      "sale": false
     }
   },
   {
@@ -447,7 +464,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Polyester", "Wool"],
+      "fiber": ["cotton", "polyester", "wool"],
       "similarFabrics": ["Denim", "Chino", "Gabardine"]
     },
     "characteristics": {
@@ -464,7 +481,8 @@
     },
     "quantities": {
       "cost": 9.99,
-      "amount": 5.5
+      "amount": 5.5,
+      "sale": true
     }
   },
   {
@@ -473,7 +491,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Silk", "Cotton", "Polyester"],
+      "fiber": ["silk", "cotton", "polyester"],
       "similarFabrics": ["Velveteen", "Corduroy", "Chenille"]
     },
     "characteristics": {
@@ -486,11 +504,12 @@
     },
     "garments": {
       "cleaning": "dry clean",
-      "uses": ["evening wear", "upholstery", "costumes"]
+      "uses": ["evening-wear", "upholstery", "costumes"]
     },
     "quantities": {
       "cost": 27.99,
-      "amount": 3.5
+      "amount": 3.5,
+      "sale": false
     }
   },
   {
@@ -499,7 +518,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven or Knit",
-      "fiber": ["Polyester", "Nylon"],
+      "fiber": ["polyester", "nylon"],
       "similarFabrics": ["Gore-Tex", "Softshell", "Ripstop Nylon"]
     },
     "characteristics": {
@@ -516,7 +535,8 @@
     },
     "quantities": {
       "cost": 12.99,
-      "amount": 6.0
+      "amount": 6.0,
+      "sale": false
     }
   },
   {
@@ -525,7 +545,7 @@
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
     "composition": {
       "construction": "Woven",
-      "fiber": ["Cotton", "Polyester", "Silk", "Wool", "Tencel"],
+      "fiber": ["cotton", "polyester", "silk", "wool", "tencel"],
       "similarFabrics": ["Poplin", "Chiffon", "Taffeta"]
     },
     "characteristics": {
@@ -542,7 +562,8 @@
     },
     "quantities": {
       "cost": 8.99,
-      "amount": 7.25
+      "amount": 7.25,
+      "sale": false
     }
   }
 ]

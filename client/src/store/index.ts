@@ -1,6 +1,12 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { cartItem } from "../types/cartItems";
 
-const initialCartState = {
+interface cartState {
+  items: cartItem;
+  totalPrice: number;
+}
+
+const initialCartState: cartState = {
   items: [],
   totalPrice: 0,
 };
@@ -9,9 +15,9 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: initialCartState,
   reducers: {
-    addItem(state, action) {
+    addItem(state, action: PayloadAction<cartItem>) {
       state.items.push(action.payload);
-      state.totalPrice += action.payload.cost;
+      //update total price
     },
   },
 });
@@ -21,5 +27,9 @@ const store = configureStore({
 });
 
 export const { addItem } = cartSlice.actions;
+
+//infer rootstate and appdispatch types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export default store;

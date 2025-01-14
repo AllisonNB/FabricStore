@@ -1,10 +1,10 @@
 .sidebarContainer {
-  border: solix 2px black;
   padding: 20px 0;
 }
 
 .filterButton {
   margin: 5px 0px 0px 0px;
+  padding: 0;
   border: none;
   background-color: #fefae0;
   font-weight: 700;
@@ -41,4 +41,21 @@ input[type="checkbox"]:checked:before {
 
 .filterOption label {
   margin-left: 8px;
+}
+
+.saleButton {
+  border: none;
+  background-color: #fefae0;
+  width: 0;
+  height: 0;
+}
+
+.saleButtonText {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.activeButton {
+  text-decoration: underline;
+  color: #780000;
 }
