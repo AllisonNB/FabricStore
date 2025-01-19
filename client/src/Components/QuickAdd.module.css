@@ -1,0 +1,33 @@
+.quickAdd {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.addToCartButton {
+  margin-left: 2rem;
+}
+
+.quantity {
+  width: 2rem;
+}
+
+.description {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #283618;
+}

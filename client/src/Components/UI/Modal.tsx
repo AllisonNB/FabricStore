@@ -1,27 +1,35 @@
-//inject modal in a nex div in index.html with id "modal"
-
 import { createPortal } from "react-dom";
 import { useEffect, useRef } from "react";
 
-const Modal = ({ children, open, className = "" }) => {
-  //use ref will give access to built in showModal funtion
-  const dialog = useRef();
+import classes from "./Modal.module.css";
 
-  //allows you to open dialog programmatically, which perserves built in features (ie: backdrop)
+interface modalProps {
+  open: boolean;
+  children: React.ReactNode;
+}
+
+const Modal = ({ open, children }: modalProps) => {
+  const dialog = useRef<HTMLDialogElement | null>(null);
+
   useEffect(() => {
     const modal = dialog.current;
+
+    if (!modal) {
+      return;
+    }
+
     if (open) {
-      dialog.current.showModal();
+      modal.showModal();
     }
 
     return () => modal.close();
   }, [open]);
 
   return createPortal(
-    <dialog ref={dialog} className={`modal ${className}`}>
+    <dialog ref={dialog} className={`${classes.modal}`}>
       {children}
     </dialog>,
-    document.getElementById("modal")
+    document.getElementById("modal")!
   );
 };
 

@@ -14,6 +14,7 @@ import { FabricData } from "./types/fabrics"; // Import the type
 const fabrics: FabricData = JSON.parse(JSON.stringify(dummyData));
 
 function App() {
+  //sidebar filtering
   interface filtersState {
     weights: string[];
     fibers: string[];

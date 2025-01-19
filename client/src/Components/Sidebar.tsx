@@ -47,7 +47,7 @@ const Sidebar = ({
           className={classes.filterButton}
           onClick={() => toggleMenu("fabricWeight")}
         >
-          Fabric weight <span>+</span>
+          Fabric weight <span>{expandedMenu.fabricWeight ? "-" : "+"}</span>
         </button>
         {expandedMenu.fabricWeight && (
           <ul>
@@ -86,7 +86,7 @@ const Sidebar = ({
           className={classes.filterButton}
           onClick={() => toggleMenu("fiberType")}
         >
-          Fiber type <span>+</span>
+          Fiber type <span>{expandedMenu.fiberType ? "-" : "+"}</span>
         </button>
         {expandedMenu.fiberType && (
           <ul>
@@ -189,7 +189,7 @@ const Sidebar = ({
           onClick={() => toggleMenu("projectType")}
         >
           Project type
-          <span>+</span>
+          <span>{expandedMenu.projectType ? "-" : "+"}</span>
         </button>
         {expandedMenu.projectType && (
           <ul>
