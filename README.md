@@ -9,9 +9,9 @@
 - ✔ if display is empty (no fabrics match combination of selection)...set-up default message
 - ✔ change icon display on menu expand and collapse
 - ✔ setup quick add component (refs & portals)
+- ✔ setup reusable button
 - setup redux store for cart
 - make currency formatter helper function (put in utils folder)
-- optional: finish reusable button component
 
 ## Notes
 

@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Modal from "./UI/Modal";
+import Button from "./UI/Button";
 import classes from "./Cart.module.css";
 
 interface CartProps {
@@ -16,16 +16,16 @@ const Cart = ({ isCartOpen, toggleModal }: CartProps) => {
           <li className={classes.cartItems}>
             <p>Name - Quantity X price</p>
             <p>
-              <button>-</button>
+              <Button>-</Button>
               <span># QTY</span>
-              <button>+</button>
+              <Button>+</Button>
             </p>
           </li>
         </ul>
         <p>price total</p>
         <p>
-          <button onClick={toggleModal}>Close</button>
-          <button>Go to Checkout</button>
+          <Button onClick={toggleModal}>Close</Button>
+          <Button>Go to Checkout</Button>
         </p>
       </div>
     </Modal>

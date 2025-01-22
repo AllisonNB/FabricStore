@@ -2,6 +2,7 @@ import classes from "./Item.module.css";
 import { Fabric } from "../types/fabrics";
 import { useState } from "react";
 import QuickAdd from "./QuickAdd";
+import Button from "./UI/Button";
 
 type fabricProps = Fabric;
 
@@ -21,9 +22,9 @@ const Item = (fabric: fabricProps) => {
         <h1>{fabric.name}</h1>
         <p>${fabric.quantities.cost} / yard</p>
         <div className={classes.buttonContainer}>
-          <button className={classes.button} onClick={toggleModal}>
+          <Button onClick={toggleModal} textOnly={false}>
             Quick Add
-          </button>
+          </Button>
         </div>
         <QuickAdd
           isQuickAddOpen={isQuickAddOpen}

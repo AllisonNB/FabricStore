@@ -1,5 +1,6 @@
 import classes from "./Header.module.css";
 import Cart from "./Cart";
+import Button from "./UI/Button";
 import { useState } from "react";
 
 const Header = () => {
@@ -13,9 +14,9 @@ const Header = () => {
     <div className={classes.header}>
       <Cart isCartOpen={isCartOpen} toggleModal={toggleModal} />
       <h1 className={classes.title}>Trendy Threads</h1>
-      <button className={classes.button} onClick={toggleModal}>
+      <Button onClick={toggleModal} textOnly={false}>
         Cart (0)
-      </button>
+      </Button>
     </div>
   );
 };

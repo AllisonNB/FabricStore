@@ -1,4 +1,5 @@
 import Modal from "./UI/Modal";
+import Button from "./UI/Button";
 import { Fabric } from "../types/fabrics";
 import classes from "./QuickAdd.module.css";
 
@@ -21,10 +22,10 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
             <h1>{fabric.name}</h1>
             <h2>{fabric.quantities.cost} per yard</h2>
             <div>
-              <button>-</button>
+              <Button textOnly={false}>-</Button>
               <input type="number" value="1" className={classes.quantity} />
-              <button>+</button>
-              <button className={classes.addToCartButton}>Add to Cart</button>
+              <Button>+</Button>
+              <Button textOnly={false}>Add to Cart</Button>
             </div>
             <div>
               <p className={classes.description}>
