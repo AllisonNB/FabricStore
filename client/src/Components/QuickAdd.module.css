@@ -22,7 +22,15 @@
 }
 
 .quantity {
-  width: 2rem;
+  width: 2.5rem;
+}
+
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .description {
