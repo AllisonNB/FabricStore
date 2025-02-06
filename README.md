@@ -10,8 +10,9 @@
 - ✔ change icon display on menu expand and collapse
 - ✔ setup quick add component (refs & portals)
 - ✔ setup reusable button
-- setup redux store for cart
-- make currency formatter helper function (put in utils folder)
+- ✔ setup redux store for cart
+- add remove item function to store
+- update cart count in header & cart modal display
 
 ## Notes
 
