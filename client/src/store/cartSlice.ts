@@ -16,10 +16,18 @@ const cartSlice = createSlice({
   initialState: initialCartState,
   reducers: {
     addItem: (state, action: PayloadAction<cartItem>) => {
-      state.items.push(action.payload);
-      state.totalPrice =
-        state.totalPrice +
-        action.payload.quantities.amount * action.payload.quantities.cost;
+      const preExistingItem = state.items.find(
+        (item) => item.name === action.payload.name
+      );
+      const newItem = action.payload;
+
+      if (preExistingItem) {
+        preExistingItem.quantities.amount += newItem.quantities.amount;
+        state.totalPrice += newItem.quantities.amount * newItem.quantities.cost;
+      } else {
+        state.items.push(action.payload);
+        state.totalPrice += newItem.quantities.amount * newItem.quantities.cost;
+      }
     },
   },
 });

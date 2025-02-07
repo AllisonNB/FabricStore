@@ -11,8 +11,9 @@
 - ✔ setup quick add component (refs & portals)
 - ✔ setup reusable button
 - ✔ setup redux store for cart
+- ✔ link cart counter in header to store
+- link cart modal display to store
 - add remove item function to store
-- update cart count in header & cart modal display
 
 ## Notes
 

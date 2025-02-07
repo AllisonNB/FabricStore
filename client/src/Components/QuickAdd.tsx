@@ -4,8 +4,7 @@ import { Fabric } from "../types/fabrics";
 import classes from "./QuickAdd.module.css";
 
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../store/index";
+import { useDispatch } from "react-redux";
 import { addItem } from "../store/cartSlice";
 
 interface QuickAddProps {
@@ -15,11 +14,9 @@ interface QuickAddProps {
 }
 
 const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
-  //connect component to redux store, use the name of the slice to access
-  const currentCartItems = useSelector((state: RootState) => state);
   const dispatch = useDispatch();
 
-  const [itemAmount, setItemAmount] = useState(0.0);
+  const [itemAmount, setItemAmount] = useState(0.25);
 
   const currentItem = {
     name: fabric.name,
@@ -30,10 +27,16 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
     },
   };
 
-  // console.log(currentCartItems);
-
   const handleIncreaseQuantity = () => {
     setItemAmount((prevItemAmount) => prevItemAmount + 0.25);
+  };
+
+  const handleDecreaseQuantity = () => {
+    setItemAmount((prevItemAmount) => prevItemAmount - 0.25);
+  };
+
+  const handleItemAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setItemAmount(parseFloat(e.target.value));
   };
 
   console.log(itemAmount);
@@ -50,10 +53,13 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
             <h1>{fabric.name}</h1>
             <h2>{fabric.quantities.cost} per yard</h2>
             <div>
-              <Button textOnly={false}>-</Button>
+              <Button onClick={handleDecreaseQuantity} textOnly={false}>
+                -
+              </Button>
               <input
                 step={0.01}
                 value={itemAmount}
+                onChange={handleItemAmountChange}
                 type="number"
                 className={classes.quantity}
               />
