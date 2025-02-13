@@ -11,3 +11,10 @@
   cursor: pointer;
   background-color: #f4a261;
 }
+
+.textButton {
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: #9b2226;
+}

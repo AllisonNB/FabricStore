@@ -3,16 +3,30 @@ import { Fabric } from "../types/fabrics";
 import { useState } from "react";
 import QuickAdd from "./QuickAdd";
 import Button from "./UI/Button";
+import { useDispatch } from "react-redux";
+import { setSelectedQuickAddItem } from "../store/cartSlice";
 
-type fabricProps = Fabric;
+type fabricProps = {
+  fabric: Fabric;
+};
 
-const Item = (fabric: fabricProps) => {
-  // console.log("item", fabric);
-
+const Item = ({ fabric }: fabricProps) => {
   const [isQuickAddOpen, setIsQuickAddOpen] = useState(false);
-
+  const dispatch = useDispatch();
   const toggleModal = () => {
     setIsQuickAddOpen(!isQuickAddOpen);
+    dispatch(
+      setSelectedQuickAddItem({
+        productId: fabric.productId,
+        name: fabric.name,
+        image: fabric.image,
+        quantities: {
+          cost: fabric.quantities.cost,
+          amount: 0,
+          sale: false,
+        },
+      })
+    );
   };
 
   return (

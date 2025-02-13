@@ -1,5 +1,6 @@
 [
   {
+    "productId": 1,
     "name": "brocade",
     "description": "A richly decorative fabric, often made from silk, featuring intricate patterns woven with a raised design.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -27,6 +28,7 @@
     }
   },
   {
+    "productId": 2,
     "name": "canvas",
     "description": "A durable, heavy-duty fabric typically made from cotton or linen, used for making tents, sails, and casual shoes.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -54,6 +56,7 @@
     }
   },
   {
+    "productId": 3,
     "name": "chenille",
     "description": "A soft, textured fabric known for its velvety feel and cozy appearance, often used in upholstery and blankets.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -81,6 +84,7 @@
     }
   },
   {
+    "productId": 4,
     "name": "chiffon",
     "description": "A lightweight, sheer fabric with a soft, flowing drape, commonly used for dresses and scarves.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -108,6 +112,7 @@
     }
   },
   {
+    "productId": 5,
     "name": "coating",
     "description": "A heavyweight fabric designed for making outerwear, such as coats and jackets, providing warmth and durability.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -135,6 +140,7 @@
     }
   },
   {
+    "productId": 6,
     "name": "crepe",
     "description": "A fabric with a crinkled or pebbled texture, available in various weights and used for elegant dresses and blouses.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -162,6 +168,7 @@
     }
   },
   {
+    "productId": 7,
     "name": "double gauze",
     "description": "A lightweight, breathable fabric made from two layers of gauze, often used for baby clothes and summer garments.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -189,6 +196,7 @@
     }
   },
   {
+    "productId": 8,
     "name": "drapey",
     "description": "Fabrics that have a fluid, graceful fall, ideal for making garments with movement, like skirts and dresses.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -216,6 +224,7 @@
     }
   },
   {
+    "productId": 9,
     "name": "fleece",
     "description": "A synthetic fabric known for its warmth, softness, and lightweight, perfect for outdoor clothing and blankets.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -243,6 +252,7 @@
     }
   },
   {
+    "productId": 10,
     "name": "flannel",
     "description": "A soft, warm fabric with a brushed surface, commonly used for pajamas, shirts, and bedding.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -270,6 +280,7 @@
     }
   },
   {
+    "productId": 11,
     "name": "jacquard",
     "description": "A fabric featuring intricate patterns woven into the material, rather than printed, used for upholstery and formal wear.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -297,6 +308,7 @@
     }
   },
   {
+    "productId": 12,
     "name": "knits",
     "description": "Stretchy fabrics made from interlocking loops of yarn, used for making comfortable and flexible garments like t-shirts and sweaters.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -324,6 +336,7 @@
     }
   },
   {
+    "productId": 13,
     "name": "lace",
     "description": "A delicate, decorative fabric made from threads in an open, web-like pattern, often used for bridal wear and lingerie.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -351,6 +364,7 @@
     }
   },
   {
+    "productId": 14,
     "name": "leather",
     "description": "A durable and flexible material made from animal hide, used for jackets, bags, and shoes.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -378,6 +392,7 @@
     }
   },
   {
+    "productId": 15,
     "name": "lining",
     "description": "Smooth, lightweight fabrics used inside garments to improve comfort and appearance, such as in coats and skirts.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -405,6 +420,7 @@
     }
   },
   {
+    "id": 16,
     "name": "satin",
     "description": "A glossy, smooth fabric with a luxurious sheen, often used for evening wear and lingerie.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -432,6 +448,7 @@
     }
   },
   {
+    "productId": 17,
     "name": "swimwear",
     "description": "Fabrics designed specifically for making swimsuits, typically stretchy, quick-drying, and resistant to chlorine.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -459,6 +476,7 @@
     }
   },
   {
+    "id": 18,
     "name": "twill",
     "description": "A versatile fabric with a distinctive diagonal weave, used for making trousers, jackets, and workwear.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -486,6 +504,7 @@
     }
   },
   {
+    "id": 19,
     "name": "velvet",
     "description": "A soft, plush fabric with a dense pile, known for its luxurious feel and rich appearance, used in clothing and home decor.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -513,6 +532,7 @@
     }
   },
   {
+    "productId": 20,
     "name": "waterResistant",
     "description": "Fabrics treated or woven to repel water, used for making outdoor gear and rainwear.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",
@@ -540,6 +560,7 @@
     }
   },
   {
+    "productId": 21,
     "name": "wovens",
     "description": "Fabrics made by interlacing threads at right angles, providing stability and structure, used for shirts, pants, and dresses.",
     "image": "https://res.cloudinary.com/dctayuelh/image/upload/v1735589647/cgxhlb7rcfhk9bqzdeku.jpg",

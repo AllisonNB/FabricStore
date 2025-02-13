@@ -1,16 +1,13 @@
 import classes from "./Button.module.css";
 
 interface ButtonProps {
-  textOnly: boolean;
   children: React.ReactNode;
   onClick: () => void;
 }
 
-const Button = ({ children, textOnly, ...props }: ButtonProps) => {
-  const cssClasses = textOnly ? `${classes.textButton}` : `${classes.button}`;
-
+const Button = ({ children, ...props }: ButtonProps) => {
   return (
-    <button className={cssClasses} {...props}>
+    <button className={classes.button} {...props}>
       {children}
     </button>
   );

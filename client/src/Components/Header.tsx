@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store/index";
 
 const Header = () => {
-  //connect component to redux store, use the name of the slice to access
   const currentCartItems = useSelector((state: RootState) => state.cart.items);
 
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -14,8 +13,6 @@ const Header = () => {
   const toggleModal = () => {
     setIsCartOpen(!isCartOpen);
   };
-
-  console.log(currentCartItems);
 
   return (
     <div className={classes.header}>

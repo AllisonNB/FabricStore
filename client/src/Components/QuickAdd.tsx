@@ -3,9 +3,13 @@ import Button from "./UI/Button";
 import { Fabric } from "../types/fabrics";
 import classes from "./QuickAdd.module.css";
 
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addItem } from "../store/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../store/index";
+import {
+  addItem,
+  addSelectedItemAmount,
+  removeSelectedItemAmount,
+} from "../store/cartSlice";
 
 interface QuickAddProps {
   isQuickAddOpen: boolean;
@@ -15,31 +19,9 @@ interface QuickAddProps {
 
 const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
   const dispatch = useDispatch();
-
-  const [itemAmount, setItemAmount] = useState(0.25);
-
-  const currentItem = {
-    name: fabric.name,
-    quantities: {
-      cost: fabric.quantities.cost,
-      amount: itemAmount,
-      sale: false,
-    },
-  };
-
-  const handleIncreaseQuantity = () => {
-    setItemAmount((prevItemAmount) => prevItemAmount + 0.25);
-  };
-
-  const handleDecreaseQuantity = () => {
-    setItemAmount((prevItemAmount) => prevItemAmount - 0.25);
-  };
-
-  const handleItemAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setItemAmount(parseFloat(e.target.value));
-  };
-
-  console.log(itemAmount);
+  const { selectedQuickAddItem } = useSelector(
+    (state: RootState) => state.cart
+  );
 
   return (
     <Modal open={isQuickAddOpen}>
@@ -53,30 +35,34 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
             <h1>{fabric.name}</h1>
             <h2>{fabric.quantities.cost} per yard</h2>
             <div>
-              <Button onClick={handleDecreaseQuantity} textOnly={false}>
+              <Button
+                onClick={() =>
+                  dispatch(removeSelectedItemAmount({ amount: 0.25 }))
+                }
+              >
                 -
               </Button>
               <input
                 step={0.01}
-                value={itemAmount}
-                onChange={handleItemAmountChange}
+                value={selectedQuickAddItem.quantities.amount}
+                min={0}
+                readOnly
                 type="number"
                 className={classes.quantity}
               />
-              <Button onClick={handleIncreaseQuantity} textOnly={false}>
+              <Button
+                onClick={() => {
+                  dispatch(addSelectedItemAmount({ amount: 0.25 }));
+                }}
+              >
                 +
               </Button>
-              <Button
-                textOnly={false}
-                onClick={() => dispatch(addItem(currentItem))}
-              >
+              <Button onClick={() => dispatch(addItem(selectedQuickAddItem))}>
                 Add to Cart
               </Button>
             </div>
             <div>
-              <p className={classes.description}>
-                low stock / available / sold out
-              </p>
+              <p className={classes.description}>low stock or sold out</p>
               <p>{fabric.description}</p>
             </div>
           </div>

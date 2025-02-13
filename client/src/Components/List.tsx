@@ -7,8 +7,6 @@ type fabricProps = {
 };
 
 const List = ({ filteredFabrics }: fabricProps) => {
-  // console.log("display:", filteredFabrics);
-
   return (
     <div className={classes.border}>
       {filteredFabrics.length === 0 ? (
@@ -18,7 +16,7 @@ const List = ({ filteredFabrics }: fabricProps) => {
       ) : (
         <ul className={classes.gridList}>
           {filteredFabrics.map((fabric, index) => (
-            <Item key={index} {...fabric} />
+            <Item key={index} fabric={fabric} />
           ))}
         </ul>
       )}
