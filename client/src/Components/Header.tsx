@@ -18,9 +18,7 @@ const Header = () => {
     <div className={classes.header}>
       <Cart isCartOpen={isCartOpen} toggleModal={toggleModal} />
       <h1 className={classes.title}>Trendy Threads</h1>
-      <Button onClick={toggleModal} textOnly={false}>
-        Cart ({currentCartItems.length})
-      </Button>
+      <Button onClick={toggleModal}>Cart ({currentCartItems.length})</Button>
     </div>
   );
 };

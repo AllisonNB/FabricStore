@@ -1,17 +1,24 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { cartItem } from "../types/cartItems";
-import { v4 as uuid } from "uuid";
 
 interface cartState {
-  selectedQuickAddItem: cartItem | null;
-  items: { [id: number]: cartItem };
-  totalPrice: number;
+  selectedQuickAddItem: cartItem;
+  items: cartItem[];
 }
 
+//need to worry about this breaking?
 const initialCartState: cartState = {
-  selectedQuickAddItem: null,
-  items: {},
-  totalPrice: 0,
+  selectedQuickAddItem: {
+    productId: "0",
+    name: "fakeItem",
+    image: "fakeItem",
+    quantities: {
+      cost: 0,
+      amount: 0,
+      sale: false,
+    },
+  },
+  items: [],
 };
 
 const cartSlice = createSlice({
@@ -21,67 +28,77 @@ const cartSlice = createSlice({
     setSelectedQuickAddItem: (state, action: PayloadAction<cartItem>) => {
       const selectedItem = action.payload;
       state.selectedQuickAddItem = selectedItem;
-      console.log(state.selectedQuickAddItem, "cheese2");
     },
     addSelectedItemAmount: (
       state,
-      action: PayloadAction<{ amount: number }>
+      action: PayloadAction<{ amount: number; productId?: string }>
     ) => {
+      const productId = action.payload.productId;
       const amount = action.payload.amount;
 
-      state.selectedQuickAddItem.quantities.amount += amount;
+      if (productId) {
+        const existingItem = state.items.find(
+          (item) => item.productId === productId
+        );
+
+        if (!existingItem) {
+          throw new Error();
+        }
+
+        existingItem.quantities.amount += amount;
+      } else {
+        state.selectedQuickAddItem.quantities.amount += amount;
+      }
     },
     removeSelectedItemAmount: (
       state,
-      action: PayloadAction<{ amount: number }>
+      action: PayloadAction<{ amount: number; productId?: string }>
     ) => {
+      const productId = action.payload.productId;
       const amount = action.payload.amount;
-      const newAmount = state.selectedQuickAddItem.quantities.amount - amount;
-      if (newAmount <= 0) {
-        state.selectedQuickAddItem.quantities.amount = 0;
-      } else {
-        state.selectedQuickAddItem.quantities.amount = newAmount;
+
+      if (productId) {
+        const existingItem = state.items.find(
+          (item) => item.productId === productId
+        );
+
+        if (!existingItem) {
+          throw new Error();
+        }
+
+        if (existingItem.quantities.amount == 0.25) {
+          return;
+        }
+        existingItem.quantities.amount -= amount;
+        return;
       }
+
+      state.selectedQuickAddItem.quantities.amount -= amount;
     },
     addItem: (state, action: PayloadAction<cartItem>) => {
+      const preExistingItem = state.items.find(
+        (item) => item.name === action.payload.name
+      );
       const newItem = action.payload;
-      const productId = newItem.productId;
-      const currentItems = state.items;
 
       if (newItem.quantities.amount == 0) {
         return;
       }
 
-      const existingItem = Object.keys(state.items).find((key: string) => {
-        const item = state.items[key as keyof typeof state.items];
-        return item.productId === productId;
-      });
-
-      if (existingItem) {
-        currentItems[productId].quantities.amount += newItem.quantities.amount;
+      if (preExistingItem) {
+        preExistingItem.quantities.amount += newItem.quantities.amount;
       } else {
-        const newId = uuid();
-        currentItems[newId] = newItem;
+        state.items.push(action.payload);
       }
-
-      state.totalPrice += newItem.quantities.amount * newItem.quantities.cost;
     },
     removeItem: (state, action: PayloadAction<cartItem>) => {
-      const removedItem = action.payload;
+      const ItemToRemove = action.payload;
+
+      console.log(ItemToRemove, "item to remove");
       state.items = state.items.filter(
-        (item) => item.name !== removedItem.name
+        (item) => item.name !== ItemToRemove.name
       );
-      state.totalPrice -=
-        removedItem.quantities.amount * removedItem.quantities.cost;
     },
-    incrementCartItemQuantity: (
-      state,
-      action: PayloadAction<{ id: number }>
-    ) => {
-      const amount = action.payload.amount;
-      const newAmount = state.item;
-    },
-    decrementCartItemQuantity: () => {},
   },
 });
 

@@ -36,9 +36,7 @@ const Item = ({ fabric }: fabricProps) => {
         <h1>{fabric.name}</h1>
         <p>${fabric.quantities.cost} / yard</p>
         <div className={classes.buttonContainer}>
-          <Button onClick={toggleModal} textOnly={false}>
-            Quick Add
-          </Button>
+          <Button onClick={toggleModal}>Quick Add</Button>
         </div>
         <QuickAdd
           isQuickAddOpen={isQuickAddOpen}

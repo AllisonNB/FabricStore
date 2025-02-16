@@ -1,5 +1,5 @@
 export type Fabric = {
-  productId: number;
+  productId: string;
   name: string;
   description: string;
   image: string;

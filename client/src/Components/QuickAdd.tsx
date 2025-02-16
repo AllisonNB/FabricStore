@@ -37,7 +37,11 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
             <div>
               <Button
                 onClick={() =>
-                  dispatch(removeSelectedItemAmount({ amount: 0.25 }))
+                  dispatch(
+                    removeSelectedItemAmount({
+                      amount: 0.25,
+                    })
+                  )
                 }
               >
                 -
@@ -52,7 +56,11 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
               />
               <Button
                 onClick={() => {
-                  dispatch(addSelectedItemAmount({ amount: 0.25 }));
+                  dispatch(
+                    addSelectedItemAmount({
+                      amount: 0.25,
+                    })
+                  );
                 }}
               >
                 +

@@ -3,19 +3,30 @@ import Button from "./UI/Button";
 import classes from "./Cart.module.css";
 
 import { useSelector, useDispatch } from "react-redux";
+import { cartItem } from "../types/cartItems";
 import { RootState } from "../store/index";
-import { addItem, removeItem } from "../store/cartSlice";
+import {
+  removeItem,
+  addSelectedItemAmount,
+  removeSelectedItemAmount,
+} from "../store/cartSlice";
 
 interface CartProps {
   isCartOpen: boolean;
   toggleModal: () => void;
 }
 
-const Cart = ({ isCartOpen, toggleModal }: CartProps) => {
-  const { items, totalPrice } = useSelector((state: RootState) => state.cart);
-  const dispatch = useDispatch();
+const calculateTotalPrice = (items: cartItem[]): string => {
+  const itemPricesArray = items.map(
+    (item) => item.quantities?.amount * item.quantities?.cost
+  );
 
-  console.log(items, "cart items");
+  return itemPricesArray.reduce((a, b) => a + b, 0).toFixed(2);
+};
+
+const Cart = ({ isCartOpen, toggleModal }: CartProps) => {
+  const { items } = useSelector((state: RootState) => state.cart);
+  const dispatch = useDispatch();
 
   return (
     <Modal open={isCartOpen}>
@@ -29,16 +40,45 @@ const Cart = ({ isCartOpen, toggleModal }: CartProps) => {
                 <h3>{item.name}</h3>
                 <p>${item.quantities.cost} / yard</p>
                 <div>
-                  <Button onClick={() => dispatch(removeItem(item))}>-</Button>
+                  <Button
+                    onClick={() =>
+                      dispatch(
+                        removeSelectedItemAmount({
+                          amount: 0.25,
+                          productId: item.productId,
+                        })
+                      )
+                    }
+                  >
+                    -
+                  </Button>
                   <span>{item.quantities.amount} yards</span>
-                  <Button onClick={() => dispatch(addItem(item))}>+</Button>
-                  <Button className={classes.removeButton}>Remove</Button>
+                  <Button
+                    onClick={() =>
+                      dispatch(
+                        addSelectedItemAmount({
+                          amount: 0.25,
+                          productId: item.productId,
+                        })
+                      )
+                    }
+                  >
+                    +
+                  </Button>
+                  <Button
+                    onClick={() => dispatch(removeItem(item))}
+                    className={classes.removeButton}
+                  >
+                    Remove
+                  </Button>
                 </div>
               </div>
             </li>
           ))}
         </ul>
-        <p className={classes.totalPrice}>Total: {totalPrice.toFixed(2)}</p>
+        <p className={classes.totalPrice}>
+          Total: {calculateTotalPrice(items)}
+        </p>
         <p className={classes.cartActions}>
           <Button onClick={toggleModal}>Close</Button>
         </p>
