@@ -14,8 +14,9 @@
 - ✔ link cart counter in header to store
 - ✔ add remove item function to store
 - ✔ fix button styling & price total in cart modal
-- fix all other reducers in cartSlice
-- add functionality to cart
+- ✔ fix all other reducers in cartSlice
+- ✔ add functionality to cart
+- add toaster pop up for adding item to cart
 
 ## Notes
 
