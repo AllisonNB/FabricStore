@@ -4,11 +4,14 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick: () => void;
   className?: string;
+  textOnly?: true;
 }
 
-const Button = ({ children, className, ...props }: ButtonProps) => {
+const Button = ({ children, className, textOnly, ...props }: ButtonProps) => {
+  const cssClasses = textOnly ? `${classes.textButton}` : `${classes.button}`;
+
   return (
-    <button className={`${classes.button} ${className || ""}`} {...props}>
+    <button className={`${cssClasses} ${className || ""}`} {...props}>
       {children}
     </button>
   );

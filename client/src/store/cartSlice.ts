@@ -55,7 +55,8 @@ const cartSlice = createSlice({
       action: PayloadAction<{ amount: number; productId?: string }>
     ) => {
       const productId = action.payload.productId;
-      const amount = action.payload.amount;
+      const newAmount = action.payload.amount;
+      const currentAmount = state.selectedQuickAddItem.quantities.amount;
 
       if (productId) {
         const existingItem = state.items.find(
@@ -69,11 +70,15 @@ const cartSlice = createSlice({
         if (existingItem.quantities.amount == 0.25) {
           return;
         }
-        existingItem.quantities.amount -= amount;
+        existingItem.quantities.amount -= newAmount;
         return;
       }
 
-      state.selectedQuickAddItem.quantities.amount -= amount;
+      if (currentAmount <= 0) {
+        return;
+      }
+
+      state.selectedQuickAddItem.quantities.amount -= newAmount;
     },
     addItem: (state, action: PayloadAction<cartItem>) => {
       const preExistingItem = state.items.find(

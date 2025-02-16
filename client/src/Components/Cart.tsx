@@ -32,52 +32,55 @@ const Cart = ({ isCartOpen, toggleModal }: CartProps) => {
     <Modal open={isCartOpen}>
       <div>
         <h2 className={classes.title}>Your cart</h2>
-        <ul>
-          {items.map((item, index) => (
-            <li className={classes.cartItem} key={index}>
-              <img src={item.image} alt="fabric swatch" />
-              <div className={classes.cartContent}>
-                <h3>{item.name}</h3>
-                <p>${item.quantities.cost} / yard</p>
-                <div>
-                  <Button
-                    onClick={() =>
-                      dispatch(
-                        removeSelectedItemAmount({
-                          amount: 0.25,
-                          productId: item.productId,
-                        })
-                      )
-                    }
-                  >
-                    -
-                  </Button>
-                  <span>{item.quantities.amount} yards</span>
-                  <Button
-                    onClick={() =>
-                      dispatch(
-                        addSelectedItemAmount({
-                          amount: 0.25,
-                          productId: item.productId,
-                        })
-                      )
-                    }
-                  >
-                    +
-                  </Button>
-                  <Button
-                    onClick={() => dispatch(removeItem(item))}
-                    className={classes.removeButton}
-                  >
-                    Remove
-                  </Button>
+        {items.length ? (
+          <ul>
+            {items.map((item, index) => (
+              <li className={classes.cartItem} key={index}>
+                <img src={item.image} alt="fabric swatch" />
+                <div className={classes.cartContent}>
+                  <h3>{item.name}</h3>
+                  <p>${item.quantities.cost} / yard</p>
+                  <div>
+                    <Button
+                      onClick={() =>
+                        dispatch(
+                          removeSelectedItemAmount({
+                            amount: 0.25,
+                            productId: item.productId,
+                          })
+                        )
+                      }
+                    >
+                      -
+                    </Button>
+                    <span>{item.quantities.amount} yards</span>
+                    <Button
+                      onClick={() =>
+                        dispatch(
+                          addSelectedItemAmount({
+                            amount: 0.25,
+                            productId: item.productId,
+                          })
+                        )
+                      }
+                    >
+                      +
+                    </Button>
+                    <Button onClick={() => dispatch(removeItem(item))} textOnly>
+                      Remove
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <h2 className={classes.cartMessage}>
+            No items in your cart currently
+          </h2>
+        )}
         <p className={classes.totalPrice}>
-          Total: {calculateTotalPrice(items)}
+          Total: $ {calculateTotalPrice(items)}
         </p>
         <p className={classes.cartActions}>
           <Button onClick={toggleModal}>Close</Button>

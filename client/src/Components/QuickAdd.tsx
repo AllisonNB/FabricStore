@@ -49,7 +49,7 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
               <input
                 step={0.01}
                 value={selectedQuickAddItem.quantities.amount}
-                min={0}
+                min={0.25}
                 readOnly
                 type="number"
                 className={classes.quantity}
