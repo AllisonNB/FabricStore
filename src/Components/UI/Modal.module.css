@@ -1,0 +1,12 @@
+.modal {
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+  min-width: 60%;
+  max-width: 80%;
+  background-color: #ffffff;
+  padding: 1rem;
+}

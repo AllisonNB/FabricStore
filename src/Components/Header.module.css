@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #264653;
+}
+
+.title {
+  padding: 5px 10px;
+  color: #fefae0;
+}
+
+@media (max-width: 375px) {
+  .header {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}

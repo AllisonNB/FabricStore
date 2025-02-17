@@ -1,0 +1,65 @@
+.quickAdd {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.addToCartButton {
+  margin-left: 2rem;
+}
+
+.quantity {
+  width: 2.5rem;
+}
+
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.description {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .fabrictitles {
+    font-size: 1.5rem;
+  }
+
+  .quantity {
+    width: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .quantityButton {
+    padding: 0 0.3rem;
+  }
+
+  .addToCartButton {
+    font-size: 0.7rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}

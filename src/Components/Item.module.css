@@ -1,0 +1,29 @@
+.border {
+  padding: 10px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.quickAddButton {
+  background-color: #36ccbb;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.quickAddButton:hover {
+  cursor: pointer;
+  background-color: #f4a261;
+}
