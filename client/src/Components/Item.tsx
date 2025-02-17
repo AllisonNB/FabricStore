@@ -8,9 +8,10 @@ import { setSelectedQuickAddItem } from "../store/cartSlice";
 
 type fabricProps = {
   fabric: Fabric;
+  notifyCartItemAdded: () => void;
 };
 
-const Item = ({ fabric }: fabricProps) => {
+const Item = ({ fabric, notifyCartItemAdded }: fabricProps) => {
   const [isQuickAddOpen, setIsQuickAddOpen] = useState(false);
   const dispatch = useDispatch();
   const toggleModal = () => {
@@ -42,6 +43,7 @@ const Item = ({ fabric }: fabricProps) => {
           isQuickAddOpen={isQuickAddOpen}
           toggleModal={toggleModal}
           fabric={fabric}
+          notifyCartItemAdded={notifyCartItemAdded}
         />
       </div>
     </>

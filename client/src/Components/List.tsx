@@ -4,9 +4,10 @@ import { Fabric } from "../types/fabrics";
 
 type fabricProps = {
   filteredFabrics: Fabric[];
+  notifyCartItemAdded: () => void;
 };
 
-const List = ({ filteredFabrics }: fabricProps) => {
+const List = ({ filteredFabrics, notifyCartItemAdded }: fabricProps) => {
   return (
     <div className={classes.border}>
       {filteredFabrics.length === 0 ? (
@@ -16,7 +17,11 @@ const List = ({ filteredFabrics }: fabricProps) => {
       ) : (
         <ul className={classes.gridList}>
           {filteredFabrics.map((fabric, index) => (
-            <Item key={index} fabric={fabric} />
+            <Item
+              key={index}
+              fabric={fabric}
+              notifyCartItemAdded={notifyCartItemAdded}
+            />
           ))}
         </ul>
       )}

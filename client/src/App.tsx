@@ -2,7 +2,10 @@ import Header from "./Components/Header";
 import List from "./Components/List";
 import Sidebar from "./Components/Sidebar";
 import classes from "./App.module.css";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { useSelector } from "react-redux";
+import { RootState } from "./store/index";
 
 //dummy data
 import dummyData from "./dummyData.json";
@@ -75,6 +78,27 @@ function App() {
     );
   });
 
+  //cart notification
+  const { items } = useSelector((state: RootState) => state.cart);
+
+  const notifyCartItemAdded = useCallback(() => {
+    if (items.length === 0) {
+      return;
+    }
+
+    toast("Item added to cart!", {
+      position: "bottom-right",
+      theme: "dark",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeButton: false,
+    });
+  }, [items.length]);
+
+  useEffect(() => {
+    notifyCartItemAdded();
+  }, [items.length, notifyCartItemAdded]);
+
   return (
     <>
       <Header />
@@ -84,7 +108,11 @@ function App() {
           toggleSale={toggleSale}
           selectedFilters={selectedFilters}
         />
-        <List filteredFabrics={filteredFabrics} />
+        <List
+          filteredFabrics={filteredFabrics}
+          notifyCartItemAdded={notifyCartItemAdded}
+        />
+        <ToastContainer />
       </main>
     </>
   );

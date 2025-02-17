@@ -15,9 +15,15 @@ interface QuickAddProps {
   isQuickAddOpen: boolean;
   toggleModal: () => void;
   fabric: Fabric;
+  notifyCartItemAdded: () => void;
 }
 
-const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
+const QuickAdd = ({
+  isQuickAddOpen,
+  toggleModal,
+  fabric,
+  notifyCartItemAdded,
+}: QuickAddProps) => {
   const dispatch = useDispatch();
   const { selectedQuickAddItem } = useSelector(
     (state: RootState) => state.cart
@@ -65,13 +71,16 @@ const QuickAdd = ({ isQuickAddOpen, toggleModal, fabric }: QuickAddProps) => {
               >
                 +
               </Button>
-              <Button onClick={() => dispatch(addItem(selectedQuickAddItem))}>
+              <Button
+                onClick={() =>
+                  dispatch(addItem(selectedQuickAddItem), notifyCartItemAdded())
+                }
+              >
                 Add to Cart
               </Button>
             </div>
             <div>
-              <p className={classes.description}>low stock or sold out</p>
-              <p>{fabric.description}</p>
+              <p className={classes.description}>{fabric.description}</p>
             </div>
           </div>
         </div>
