@@ -38,8 +38,10 @@ const QuickAdd = ({
         <div className={classes.details}>
           <img src={fabric.image} alt="fabric" />
           <div>
-            <h1>{fabric.name}</h1>
-            <h2>{fabric.quantities.cost} per yard</h2>
+            <h1 className={classes.fabrictitles}>{fabric.name}</h1>
+            <h2 className={classes.fabrictitles}>
+              {fabric.quantities.cost} per yard
+            </h2>
             <div>
               <Button
                 onClick={() =>
@@ -49,6 +51,7 @@ const QuickAdd = ({
                     })
                   )
                 }
+                className={classes.quantityButton}
               >
                 -
               </Button>
@@ -68,6 +71,7 @@ const QuickAdd = ({
                     })
                   );
                 }}
+                className={classes.quantityButton}
               >
                 +
               </Button>
@@ -75,6 +79,7 @@ const QuickAdd = ({
                 onClick={() =>
                   dispatch(addItem(selectedQuickAddItem), notifyCartItemAdded())
                 }
+                className={classes.addToCartButton}
               >
                 Add to Cart
               </Button>

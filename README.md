@@ -1,13 +1,3 @@
-# Next Steps
-
-- responsive styling
-  - 916px - grid sizing
-  - 844px - sidebar
-  - 680px - header
-  - 660px quick add position
-  - 366px - quick add content spacing
-- deploy & update portfolio
-
 # Fabric Store
 
 A mimic of an online fabric store that users can puruse! You can apply mutliple filters to see what is in stock and on sale while also learning alittle more about different kinds of fabrics and their uses!

@@ -4,3 +4,11 @@
   padding: 20px 15px;
   gap: 5px;
 }
+
+@media (max-width: 900px) {
+  .border {
+    padding: 20px 0px 20px 15px;
+    gap: 0;
+    grid-template-columns: 1.5fr 4fr;
+  }
+}

@@ -23,7 +23,7 @@
 
 .cartContent {
   display: grid;
-  grid-template-columns: 0.75fr 0.75fr auto;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   justify-content: center;
 }
@@ -41,4 +41,14 @@
   text-align: end;
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+@media (max-width: 772px) {
+  .cartItem {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .cartContent {
+    grid-template-columns: 0.5fr 0.5fr 1.2fr;
+  }
 }
